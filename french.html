@@ -3,22 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <title>Message Git</title>
-    <link rel="stylesheet" href="style.css"> <style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Style global */
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            flex-direction: column; /* Permet d'aligner le titre et le lien de retour */
-        }
-        h1 {
+            min-height: 100vh;
+            flex-direction: column;
+            text-align: center;
             color: #333;
+        }
+
+        /* Boîte centrale */
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 90%;
+        }
+
+        /* Titres */
+        h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        /* Paragraphes */
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        /* Liens */
+        a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.2s;
+        }
+
+        a:hover {
+            color: #2c3e50;
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
-    <h1>Git est génial !</h1>
-    <p><a href="index.html">Retour à la page d'accueil</a></p> </body>
+    <div class="container">
+        <h1>Git est génial !</h1>
+        <p><a href="index.html">Retour à la page d'accueil coucocuycoy </a></p>
+    </div>
+</body>
 </html>
