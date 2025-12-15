@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -5,44 +6,50 @@
 }
 
 body {
-    font-family: 'Inter', 'Segoe UI', sans-serif;
-    background: #f7f7f8;
-    color: #1f1f1f;
     min-height: 100vh;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background: linear-gradient(
+        135deg,
+        #d8cfc4,
+        #cfc7be,
+        #c5bdb4
+    );
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #1e1e1e;
 }
 
 .container {
-    background: #ffffff;
-    padding: 3rem 4rem;
-    border-radius: 16px;
-    max-width: 600px;
     width: 90%;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    max-width: 420px;
+    padding: 3rem 2.5rem;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    border-radius: 24px;
 }
 
 h1 {
-    font-size: 2.2rem;
-    font-weight: 700;
+    font-size: 1.8rem;
+    font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
 .subtitle {
     font-size: 0.95rem;
-    color: #6b6b6b;
-    margin-bottom: 2rem;
+    opacity: 0.7;
+    margin-bottom: 2.5rem;
 }
 
 .content p {
-    font-size: 1rem;
+    font-size: 0.95rem;
     line-height: 1.6;
     margin-bottom: 2rem;
 }
 
 h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
     margin-bottom: 1rem;
 }
 
@@ -50,22 +57,21 @@ h2 {
     list-style: none;
 }
 
-.language-list li {
-    margin-bottom: 0.5rem;
-}
-
 .language-list a {
-    display: inline-block;
-    padding: 0.6rem 1rem;
-    border-radius: 8px;
-    background: #f0f0f2;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.9rem;
+    border-radius: 999px;
+    background: #1f1f1f;
+    color: #ffffff;
     text-decoration: none;
-    color: #1f1f1f;
+    font-size: 0.95rem;
     font-weight: 500;
-    transition: background 0.3s ease, transform 0.2s ease;
+    transition: transform 0.2s ease, opacity 0.3s ease;
 }
 
 .language-list a:hover {
-    background: #e2e2e6;
     transform: translateY(-2px);
+    opacity: 0.9;
 }
